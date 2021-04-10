@@ -1,5 +1,4 @@
 // Logical Operators with Non-Booleans
-// Logical Operators with Non-Booleans
 
 console.log('Falsy (false) values:');
 console.log(undefined, 'null', 0, false, '', NaN);
