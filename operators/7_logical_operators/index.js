@@ -67,4 +67,4 @@ debugExample(highIncome, goodCreditScore, eligibleForLoan);
 
 let applicationRefused = !eligibleForLoan;
 
-console.log('Loan applciation refused?:', applicationRefused)
+console.log('Loan applciation refused?:', applicationRefused);
