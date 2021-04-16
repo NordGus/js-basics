@@ -1,10 +1,12 @@
-// Write a function that takes two numbers and returns the maximun of the two.
-
-// max takes two numbers a and b and return the maximun of the two
-function max(a, b) {
-    return (a > b) ? a : b;
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
 }
 
-console.log(max(10, 5));
-console.log(max(10, 25));
-console.log(max(10, 10));
+const post = new Post('a', 'b', 'c');
+
+console.log(post);
