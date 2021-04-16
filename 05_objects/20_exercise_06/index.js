@@ -1,10 +1,16 @@
-// Write a function that takes two numbers and returns the maximun of the two.
-
-// max takes two numbers a and b and return the maximun of the two
-function max(a, b) {
-    return (a > b) ? a : b;
+function PriceRange(label, tooltip, minPerPerson, maxPerPerson) {
+    this.label = label;
+    this.tooltip = tooltip;
+    this.minPerPerson = minPerPerson;
+    this.maxPerPerson = maxPerPerson;
 }
 
-console.log(max(10, 5));
-console.log(max(10, 25));
-console.log(max(10, 10));
+const priceRanges = [
+    new PriceRange('$', 'Inexpensive', 0, 99),
+    new PriceRange('$$', 'Moderate', 100, 199),
+    new PriceRange('$$$', 'Pricey', 200, undefined)
+];
+
+
+for (const range of priceRanges)
+    console.log(range);
