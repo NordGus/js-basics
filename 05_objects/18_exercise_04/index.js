@@ -1,10 +1,13 @@
-// Write a function that takes two numbers and returns the maximun of the two.
-
-// max takes two numbers a and b and return the maximun of the two
-function max(a, b) {
-    return (a > b) ? a : b;
+const post = {
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 42,
+    comments: [
+        { author: 'a', body: 'b' },
+        { author: 'c', body: 'd' }
+    ],
+    isLive: true
 }
 
-console.log(max(10, 5));
-console.log(max(10, 25));
-console.log(max(10, 10));
+console.log(post);
